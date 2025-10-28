@@ -1,0 +1,19 @@
+{
+  "name": "design-system-poc",
+  "private": false,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @dspoc/tokens && npm run build -w @dspoc/components && npm run build -w @dspoc/storybook",
+    "lint": "eslint . --max-warnings=0",
+    "ci": "npm ci && npm run build && npm test -w @dspoc/components",
+    "format": "prettier -w ."
+  },
+  "description": "Ce dépôt démontre un flux automatisé de design-to-code pour un système de design, en partant de Figma jusqu’à l’intégration dans React avec Radix UI et Storybook.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

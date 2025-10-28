@@ -1,0 +1,15 @@
+{
+  "name": "@dspoc/tokens",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+  "clean": "rimraf build",
+  "build": "node build.mjs"
+},
+  "devDependencies": {
+    "rimraf": "^6.0.0",
+    "style-dictionary": "^4.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
